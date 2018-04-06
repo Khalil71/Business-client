@@ -50,7 +50,7 @@ $ npm run test-user
 
 ## APIs
 
-Server runs on http://localhost:4000/
+Client runs on http://localhost:4000/
 
 ### Companies APIs
 

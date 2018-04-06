@@ -27,7 +27,6 @@ Company.prototype.createCompany = function () {
 
 Company.prototype.updateCompany = function () {
   var body = {};
-  body.newDisplayName = this.data.newDisplayName;
   return axios.patch(this.url + this.data.displayName, body).then(function (data) {
     return data.data.data;
   });
