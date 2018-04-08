@@ -2,7 +2,7 @@ var axios = require('axios');
 
 function Workspace(data) {
   this.data = data;
-  this.url = 'http://localhost:3000/companies/';
+  this.url = 'http://localhost:3000/';
 }
 
 Workspace.prototype.createWorkspace = function () {

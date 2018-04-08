@@ -10,7 +10,7 @@ describe('Workspaces Test', function () {
     var db = mongoose.connection;
     db.on('error', console.error.bind(console, 'connection error')); // eslint-disable-line
     db.once('open', function () {
-      console.log('We are connected to test database!'); // eslint-disable-line
+      console.log('We are connected to Business database!'); // eslint-disable-line
       done();
     });
   });

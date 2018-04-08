@@ -2,7 +2,7 @@ var axios = require('axios');
 
 function Company(data) {
   this.data = data;
-  this.url = 'http://localhost:3000/companies/';
+  this.url = 'http://localhost:3000/';
 }
 
 Company.prototype.getCompanies = function () {
