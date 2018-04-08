@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-// var morgan = require('morgan');
+var morgan = require('morgan');
 var cookieParser = require('cookie-parser');
 
 var routes = require('./src/routes/routes');
@@ -8,7 +8,7 @@ var routes = require('./src/routes/routes');
 var app = express();
 var port = process.env.PORT || 4000;
 
-// app.use(morgan('combined'));
+app.use(morgan('combined'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
