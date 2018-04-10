@@ -20,6 +20,9 @@ User.prototype.createUser = function () {
     )
     .then(function (data) {
       return data.data.data;
+    })
+    .catch(function (e) {
+      return e;
     });
 };
 
@@ -44,6 +47,9 @@ User.prototype.updateUser = function () {
     )
     .then(function (data) {
       return data.data.data;
+    })
+    .catch(function (e) {
+      return e;
     });
 };
 
@@ -61,6 +67,9 @@ User.prototype.removeUser = function () {
     )
     .then(function (data) {
       return data.data.data;
+    })
+    .catch(function (e) {
+      return e;
     });
 };
 

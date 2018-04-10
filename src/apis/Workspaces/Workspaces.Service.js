@@ -12,6 +12,9 @@ Workspace.prototype.createWorkspace = function () {
     .post(this.url + this.data.companyDisplayName + '/workspaces', body)
     .then(function (data) {
       return data.data.data;
+    })
+    .catch(function (e) {
+      return e;
     });
 };
 
@@ -25,6 +28,9 @@ Workspace.prototype.updateWorkspace = function () {
     )
     .then(function (data) {
       return data.data.data;
+    })
+    .catch(function (e) {
+      return e;
     });
 };
 
